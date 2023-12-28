@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/releases/v6.2.1/js/all.js"></script>
+    <title>Jsme Mír</title>
+</head>
+<body>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-md sticky-top">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand"><img src="img/logo.png"></a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#responzivnimenu">
+                <span><i class="fa-solid fa-list" style="color: #f3f3f3; font-size: 2rem"></i></span>
+            </button>
+            <div id="responzivnimenu" class="navbar-collapse collapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a href="#" class="nav-link"> ZAPOJTE SE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">O NÁS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">KONTAKTY</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">GALERIE</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--Home-->
+    <div class="home"></div>
+    <div class="container-fluid padding">
+      <div class="row padding home-container">
+        <div class="col-lg-6 home-text">
+          <h1>MY JSME <u>MIR</u></h1>
+          <p>
+            Jsme spolek který chce zastavit věčné války, zbytečnou ztrátu lidského života, ničení zemí a kultur. Ochránit dobré lidi před nebezpečím z cizích zemí, i zločinu v té naší. Naším cílem je stvořit lepší svět pro naše děti, abychom jim mohli předat naši kulturu a naše hodnoty.
+          </p>
+          <a href="#">Chci se pridat!</a>
+        </div>
+        <div class="col-lg-6">
+          <img src="img/icon.ico" class="img-fluid">
+        </div>
+      </div>
+    </div>
+
+
+    <!--O nas-->
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  
+    <!--Send E-mail-->
+    <div class="container">
+        <form id="contact" action="send.php" method="post">
+          <h1>Contact Form</h1>
+     
+          <fieldset>
+            <input placeholder="Your name" name="name" type="text" tabindex="1" autofocus>
+          </fieldset>
+          <fieldset>
+            <input placeholder="Your Email Address" name="email" type="email" tabindex="2">
+          </fieldset>
+          <fieldset>
+            <input placeholder="Type your subject line" type="text" name="subject" tabindex="4">
+          </fieldset>
+          <fieldset>
+            <textarea name="message" placeholder="Type your Message Details Here..." tabindex="5"></textarea>
+          </fieldset>
+     
+          <fieldset>
+            <button type="submit" name="send" id="contact-submit">Submit Now</button>
+          </fieldset>
+        </form>
+      </div>
+
+</body>
+</html>
