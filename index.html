@@ -11,79 +11,452 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 	<script src="https://use.fontawesome.com/releases/v6.2.1/js/all.js"></script>
+  <script src="js.js"></script>
     <title>Jsme Mír</title>
 </head>
 <body>
-    <!--Navbar-->
-    <nav class="navbar navbar-expand-md sticky-top">
-        <div class="container-fluid">
-            <a href="#" class="navbar-brand"><img src="img/logo.png"></a>
-            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#responzivnimenu">
-                <span><i class="fa-solid fa-list" style="color: #f3f3f3; font-size: 2rem"></i></span>
-            </button>
-            <div id="responzivnimenu" class="navbar-collapse collapse">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a href="#" class="nav-link"> ZAPOJTE SE</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">O NÁS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">KONTAKTY</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">GALERIE</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+  <!--Navbar-->
+  <nav class="navbar navbar-expand-md sticky-top">
+      <div class="container-fluid">
+          <a href="#" class="navbar-brand"><img src="img/logo.png"></a>
+          <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#responzivnimenu">
+              <span><i class="fa-solid fa-list navI"></i></span>
+          </button>
+          <div id="responzivnimenu" class="navbar-collapse collapse text-center navCol">
+              <ul class="navbar-nav ml-auto">
+                  <li class="nav-item">
+                      <a href="#oNasS" class="nav-link">O NÁS</a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="#sluzbyS" class="nav-link">SLUŽBY</a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="#galerieS" class="nav-link">GALERIE</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#uspechyS" class="nav-link">ÚSPĚCHY</a>
+                </li>
+                  <li class="nav-item">
+                      <a href="#kontaktyS" class="nav-link">KONTAKTY</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="dotaznik.html" class="nav-link">DOTAZNÍK</a>
+                </li>
+              </ul>
+          </div>
+      </div>
+  </nav>
 
-    <!--Home-->
+
+  <!--Home-->
     <div class="home"></div>
-    <div class="container-fluid padding">
-      <div class="row padding home-container">
-        <div class="col-lg-6 home-text">
-          <h1>MY JSME <u>MIR</u></h1>
+    <div class="container-fluid">
+      <div class="home-container text-center">
+        <div class="home-text col-xs-12 col-sm-6">
+          <h1>MY JSME MÍR</h1>
           <p>
-            Jsme spolek který chce zastavit věčné války, zbytečnou ztrátu lidského života, ničení zemí a kultur. Ochránit dobré lidi před nebezpečím z cizích zemí, i zločinu v té naší. Naším cílem je stvořit lepší svět pro naše děti, abychom jim mohli předat naši kulturu a naše hodnoty.
+            <i>
+              "Spolu k míru, odmítáme cesty války."
+            </i>
+            <div class="jumbotron">
+              <p>
+                Jsme spolek který chce zastavit věčné války, zbytečnou
+                ztrátu lidského života, ničení zemí a kultur. Ochránit
+                dobré lidi před nebezpečím z cizích zemí, i zločinu v
+                té naší. Naším cílem je stvořit lepší svět pro naše děti,
+                abychom jim mohli předat naši kulturu a naše hodnoty.
+              </p>
+          </div>
           </p>
-          <a href="#">Chci se pridat!</a>
-        </div>
-        <div class="col-lg-6">
-          <img src="img/icon.ico" class="img-fluid">
         </div>
       </div>
     </div>
+    <div class="mimg text-center">
+      <p><a href="#oNasS"><i class="fa-solid fa-circle-arrow-down fa-beat"></i></a></p>
+    </div>
 
 
-    <!--O nas-->
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-  
-    <!--Send E-mail-->
-    <div class="container">
-        <form id="contact" action="send.php" method="post">
-          <h1>Contact Form</h1>
-     
-          <fieldset>
-            <input placeholder="Your name" name="name" type="text" tabindex="1" autofocus>
-          </fieldset>
-          <fieldset>
-            <input placeholder="Your Email Address" name="email" type="email" tabindex="2">
-          </fieldset>
-          <fieldset>
-            <input placeholder="Type your subject line" type="text" name="subject" tabindex="4">
-          </fieldset>
-          <fieldset>
-            <textarea name="message" placeholder="Type your Message Details Here..." tabindex="5"></textarea>
-          </fieldset>
-     
-          <fieldset>
-            <button type="submit" name="send" id="contact-submit">Submit Now</button>
-          </fieldset>
-        </form>
+
+  <!--O nas-->
+  <div id="oNasS"></div>
+  <section id="oNasS" class="reveal">
+    <div class="oNas container-fluid">
+      <h1 id="nadpis">O NÁS</h1>
+      <hr class="hr">
+      <div class="padding row text-center">
+        <div class="col-xs-12 col-sm-6 col-md-4 oNas-card">
+          <a href="bednarik.html">
+            <img src="img/bednarik.png" alt="">
+            <center>
+              <div class="oNas-text">
+                <h1>Michal Bednařík</h1>
+                <p>Manažer logistiky</p>
+              </div>
+            </center>
+          </a>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4 oNas-card">
+          <a href="havel.html">
+            <img src="img/havel.png" alt="">
+            <center>
+              <div class="oNas-text">
+                <h1>Kryštof Havel</h1>
+                <p>Vůdce</p>
+              </div>
+            </center>
+          </a>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-4 oNas-card">
+          <a href="bednar.html">
+            <img src="img/bednar.png" alt="">
+            <center>
+              <div class="oNas-text">
+                <h1>Aleš Bednár</h1>
+                <p>Manařer technologií</p>
+              </div>
+            </center>
+          </a>
+        </div>
       </div>
+    </div>
+  </div>
+  <div class="jumbotron">
+      <p>        
+        Tým pod vedením Kryštofa Havla zahrnuje zkušené profesionály. 
+        Michal Bednařík exceluje jako manažer logistiky, zajišťuje bezproblémový 
+        pohyb zdrojů. Aleš Bednár, manažer technologií, stojí v čele inovací a 
+        technologického rozvoje. Společně tvoří tým harmonických jednotlivců se 
+        společným cílem.
+      </p>
+  </div>
+  </section>
+
+
+
+  <!--Sluzby-->
+  <section id="sluzbyS" class="reveal">
+    <div class="container-fluid padding sluzby">
+      <h1 id="nadpis">SLUŽBY</h1>
+      <hr class="hr">
+      <div class="padding row text-center">
+        <div class="col-xs-12 col-sm-6 col-md-4">
+          <div class="sluzby-card text-center">
+            <div class="sluzby-nadpis">
+              <h1>POMOC</h1>
+            </div>
+            <div class="sluzby-list">
+              <ul>
+                <li>Humanitarní pomoc</li>
+                <li>Podpora rozvoje</li>
+                <li>Upevnění</li>
+              </ul>
+            </div>
+            <a data-toggle="modal" data-target="#pomocModal">VÍCE</a>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4">
+          <div class="sluzby-card text-center">
+            <div class="sluzby-nadpis">
+              <h1>ŘEŠENÍ</h1>
+            </div>
+            <div class="sluzby-list">
+              <ul>
+                <li>Řešení konfliktů</li>
+                <li>Mírová diplomacie</li>
+                <li>Porozumění</li>
+              </ul>
+            </div>
+            <a href="#" data-toggle="modal" data-target="#reseniModal">VÍCE</a>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4">
+          <div class="sluzby-card text-center">
+            <div class="sluzby-nadpis">
+              <h1>MÍR</h1>
+            </div>
+            <div class="sluzby-list">
+              <ul>
+                <li>Mírové projekty</li>
+                <li>Podpora myšlenky</li>
+                <li>Budování míru</li>
+              </ul>
+            </div>
+            <a href="#" data-toggle="modal" data-target="#mirModal">VÍCE</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--Modální okno pomoc-->
+  <div id="pomocModal" class="modal" role="dialog">
+    <div class="container-fluid modalW">
+      <div class="container-fluid modalW-text">
+        <h1 class="text-center">Mírová diplomacie a konfliktní řešení:</h1>
+        <p>
+          Naše firma vyniká v poskytování služeb v oblasti 
+          mírové diplomacie, aktivně pracujeme na prevenci 
+          konfliktů a nabízíme strategie pro mírové řešení 
+          mezinárodních a mezilidských sporů. Specializujeme 
+          se na rozvoj udržitelných vztahů a mezikulturního 
+          porozumění, abychom přispěli k mírovému soužití ve světě.
+        </p>
+        <center>
+          <button type="button" data-dismiss="modal">ZAVŘÍT</button>
+        </center>
+      </div>
+    </div>
+  </div>
+
+  <!--Modální okno řešení-->
+  <div id="reseniModal" class="modal" role="dialog">
+    <div class="container-fluid modalW">
+      <div class="container-fluid modalW-text">
+        <h1 class="text-center">Vzdělávání o míru a udržitelnosti:</h1>
+        <p>
+          Náš zájem směřuje k vzdělávacím programům a kampaním, 
+          které podporují myšlenku míru, tolerance a udržitelnosti. 
+          Poskytujeme informace a osvětu, které pomáhají budovat vědomí 
+          o důležitosti míru ve světě a v podnikání. Věříme, že 
+          vzdělávání je klíčem k formování pozitivních hodnot a budování 
+          trvale udržitelných společností.
+        </p>
+        <center>
+          <button type="button" data-dismiss="modal">ZAVŘÍT</button>
+        </center>
+      </div>
+    </div>
+  </div>
+
+  <!--Modální okno mír-->
+  <div id="mirModal" class="modal" role="dialog">
+    <div class="container-fluid modalW">
+      <div class="container-fluid modalW-text">
+        <h1 class="text-center">Mírové projekty a humanitární pomoc:</h1>
+        <p>
+          Zúčastňujeme se aktivně mírových projektů a poskytujeme humanitární 
+          pomoc v oblastech postižených konflikty. Naše úsilí směřuje k podpoře 
+          rozvoje komunit a obnově prostřednictvím projektů, které napomáhají u
+          pevňovat mír a stabilitu. Jsme odhodláni přinášet pozitivní změny a 
+          pomáhat těm, kdo to nejvíce potřebují.
+        </p>
+        <center>
+          <button type="button" data-dismiss="modal">ZAVŘÍT</button>
+        </center>
+      </div>
+    </div>
+  </div>
+
+
+
+<!--Galerie-->
+<div id="galerieS"></div>
+  <section id="galerieS" class="reveal">
+    <div class="galerie">
+      <h1 id="nadpis">GALERIE</h1>
+      <hr class="hr">
+      <div class=" galerie-container">
+        <div class="galerie-mainText padding container-fluid">
+          <h1>Stop</h1>
+          <p>
+            Vstupte do naší galerie, kde obrázky nejen zachycují naše triumfy, 
+            ale také hlásají poselství míru. Každý snímek je jakýmsi "Stop War" 
+            manifestem, který sdílíme s vámi. Prohlédněte si vizuální pohled na naši 
+            snahu a přidejte se k nám v boji za mír.
+          </p>
+          <a href="#oNasS">Číst více></a>
+        </div>
+        <div class="galerie-mainImage"></div>
+      </div>
+      <div class="galerie-bottomText">
+        <div class="container-fluid padding">
+          <div class="row padding">
+            <div class="col-lg-6">
+              <h4>Světlo a stíny</h4>
+              <p>Prozkoumejte naši galerii plnou emocí, od radosti obnovy po výzvy míru. 
+                Fotografie nám připomínají, proč bojujeme za lepší zítřek.</p>
+            </div>
+            <div class="col-lg-6">
+              <div class="container-fluid padding text-center">
+                <div class="row padding">
+                  <div class="col-md-4 col-xs-12">
+                    <img src="img/gal/1.jpg" alt="">
+                  </div>
+                  <div class="col-md-4 col-xs-12">
+                    <img src="img/gal/2.jpg" alt="">
+                  </div>
+                  <div class="col-md-4 col-xs-12">
+                    <img src="img/gal/3.jpg" alt="">
+                  </div>
+                </div>
+                <a href="galerie.html">PODÍVEJ SE NA GALERII></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+<!--Uspechy-->
+  <div id="uspechyS"></div>
+  <section id="uspechyS" class="reveal">
+    <h1 id="nadpis">ÚSPĚCHY</h1>
+    <hr class="hr">
+  <div class="uspechy-container">
+    <div class="container-slides">
+      <ul class="slides">
+        <li class="slide activeU brand1 action">
+            <span class="text-center">01</span>
+          <div class="slide-content container-fluid pr-3 col-sm-12 col-lg-6">
+            <h1>Oživení naděje</h1>
+            <p>
+              Naše první výrazné úspěšné úsilí spočívalo v 
+              obnově a znovuobnovení obydlených částí země postižené 
+              válkou. Skrze naši iniciativu a humanitární snahu jsme 
+              přinesli nový život do těchto oblastí, poskytující pomocnou 
+              ruku lidem, kteří prošli obtížnými časy. Naše úsilí nejen obnovilo 
+              domovy, ale také posílilo pouta komunity a zanechalo trvalý pozitivní 
+              otisk na cestě k míru a obnově.
+            </p>
+          </div>
+        </li>
+        <li class="slide brand2 action">
+            <span class="text-center">02</span>
+            <div class="slide-content container-fluid pr-3 col-sm-12 col-lg-6">
+              <h1>Spolu v boji</h1>
+              <p>
+                Naše druhé významné úspěchy spočívaly v poskytování klíčové pomoci 
+                starším lidem v průběhu válečného konfliktu. Skrze naše programy a 
+                služby jsme vytvořili bezpečné a podpůrné prostředí pro starší generaci, 
+                umožňující jim překonat výzvy války. Naše iniciativy nejen chránily fyzické 
+                a duševní zdraví, ale také ukázaly sílu solidarity a jednoty, která je klíčová 
+                pro přežití v těžkých časech.
+              </p>
+            </div>
+        </li>
+        <li class="slide brand3 action">
+            <span class="text-center">03</span>
+            <div class="slide-content container-fluid pr-3 col-sm-12 col-lg-6">
+              <h1>Radostné narozeniny</h1>
+              <p>
+                Náš třetí významný úspěch spočíval ve záchraně dětí z oblastí postižených 
+                válkou a ve vytvoření prostoru pro oslavy jejich narozenin. Skrze naše úsilí 
+                jsme poskytli bezpečí, lásku a příležitost pro děti prožít šťastné narozeniny. 
+                Tato iniciativa nejenže obnovila dětskou nevinnost v těžkých časech, ale také 
+                ukázala, že každý malý okamžik radosti je důležitý a může mít trvalý dopad na 
+                jejich budoucnost.
+              </p>
+            </div>
+        </li>
+        <li class="slide brand4 action">
+            <span class="text-center">04</span>
+            <div class="slide-content container-fluid pr-3 col-sm-12 col-lg-6">
+              <h1>Bezpečné přesuny</h1>
+              <p>
+                Náš čtvrtý triumf spočíval ve společných a úspěšných evakuacích, během kterých 
+                jsme spolu s občany, včetně jejich dětí, přemístili lidi z nebezpečných oblastí 
+                do bezpečné země. Naše snaha zajistila, aby rodiny byly chráněny a mohly začít 
+                nový život v bezpečném prostředí. Tím jsme vytvořili cestu ke světlu naděje v 
+                situacích, které byly původně poznamenané nejistotou a strachem.
+              </p>
+            </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  </section>
+
+
+<!--Kontakty-->
+<div id="kontaktyS"></div>
+  <section id="kontaktyS">
+    <div class="container-fluid kont">
+      <div class="row text-center">
+        <div class="col-xs-12 col-sm-6 col-md-4">
+        <!--Send E-mail-->
+        <div class="container email">
+          <form id="contact" action="send.php" method="post">
+            <h1>Napiš nám</h1>
+            <hr class="hr">
+            <h6>Jméno</h6>
+            <fieldset>
+              <input name="name" type="text" tabindex="1">
+            </fieldset>
+            <h6>E-mail</h6>
+            <fieldset>
+              <input name="email" type="email" tabindex="2">
+            </fieldset>
+            <h6>Subjekt</h6>
+            <fieldset>
+              <input type="text" name="subject" tabindex="4">
+            </fieldset>
+            <h6>Zpráva</h6>
+            <fieldset>
+              <textarea name="message" tabindex="5" rows="3" cols="40"></textarea>
+            </fieldset>
+       
+            <fieldset>
+              <button type="submit" name="send" id="contact-submit">ODESLAT</button>
+            </fieldset>
+          </form>
+        </div>
+        </div>
+        <!--Kontakt-->
+        <div class="col-xs-12 col-sm-6 col-md-4 kontakty">
+          <h1>Kontakty</h1>
+          <hr class="hr">
+          <div class="container-fluid padding kontakty">
+            <div class="padding row text-center">
+              <div class="col-6">
+                <i class="fa-regular fa-map"></i>
+                <h4>Sídlo</h4>
+                <p>Kuks 28</p>
+              </div>
+              <div class="col-6">
+                <i class="fa-regular fa-address-book"></i>
+                <h4>Telefon</h4>
+                <p>747 457 328</p>
+              </div>
+              <div class="col-6">
+                <i class="fa-regular fa-building"></i>
+                <h4>Pobočky</h4>
+                <p>Habrkovice 40</p>
+              </div>
+              <div class="col-6">
+                <div class="container-fluid padding socials">
+                  <div class="padding row text-center">
+                    <div class="col-6">
+                      <a href="https://www.facebook.com/profile.php?id=61555726977675" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    </div>
+                    <div class="col-6">
+                      <a href="https://www.instagram.com/jsmemir/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <div class="col-6">
+                      <a href="https://twitter.com/JsmeMir" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                    <div class="col-6">
+                      <a href="https://www.youtube.com/channel/UC-AxSN4K1psABgtxLFDOlaQ" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-4">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2543.0647606388534!2d15.88488241233283!3d50.40263067146455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470e86355137d52f%3A0xe8178883c89f84ea!2sKuks%2028%2C%20544%2043%20Kuks!5e0!3m2!1scs!2scz!4v1705247163066!5m2!1scs!2scz" allowfullscreen="no" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--Footer-->
+  <footer class="page-footer">
+    <div class="text-center py-3">
+      <h6>&copy;COPYRIGHT; JSMEMIR 2024 VŠECHNA PRÁVA VYHRAZENA</h6>
+    </div>
+  </footer>
 
 </body>
 </html>

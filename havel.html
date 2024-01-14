@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/releases/v6.2.1/js/all.js"></script>
+    <title>Jsme Mír</title>
+</head>
+<body>
+  <!--Navbar-->
+  <nav class="navbar navbar-expand-md sticky-top">
+    <div class="container-fluid">
+        <a href="index.html" class="navbar-brand"><img src="img/logo.png"></a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#responzivnimenu">
+            <span><i class="fa-solid fa-list navI"></i></span>
+        </button>
+        <div id="responzivnimenu" class="navbar-collapse collapse text-center navCol">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">ZPĚT</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!--Informace-->
+<div class="micro">
+    <div class="container-flex">
+        <div class="container-fluid padding">
+            <div class="row padding">
+                <div class="col-sm-6 col-12">
+                    <center><img src="img/havel.png" class="img-fluid"></center>
+                    <center>
+                        <div class="oNas-text">
+                          <h1>Kryštof Havel</h1>
+                          <p>Vůdce</p>
+                        </div>
+                      </center>
+                </div>
+                <div class="col-sm-6 col-12">
+                    <div class="container-flex text-center">
+                        <h1>Kryštof Havel</h1><hr>
+                        <div class="row padding">
+                            <div class="col-6">
+                                <ul>
+                                    <li>Vůdce</li>
+                                    <li>Expert na všechno</li>
+                                    <li>Profesionál</li>
+                                </ul>
+                            </div>
+                            <div class="col-6">
+                                <ul>
+                                    <li>Věk: 19 let</li>
+                                    <li>19 let teorie</li>
+                                    <li>19 let praxe</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <p>
+                          Kryštof Havel, naše vůdčí síla a vizionář, se narodil s přirozeným 
+                          talentem pro inspiraci a vedení. Jeho cesta začala v mladém věku, kdy už 
+                          vynikal svou schopností spojovat lidi kolem sebe k dosažení společného 
+                          cíle. S výrazným smyslem pro odpovědnost a integritou si získal důvěru 
+                          našeho týmu a komunity.
+                          Jako lídr nás Kryštof vede svým příkladem a schopností vidět příležitosti tam, kde jiní vidí 
+                          výzvy. Jeho schopnost překonávat překážky a nalézat nové perspektivy nám 
+                          umožňuje tvořit změny nejen ve světě kolem nás, ale i ve vlastním myšlení 
+                          a postojích.
+                          Kryštofova vizionářská energie nám ukazuje, že každý malý krok může vést 
+                          k velkému posunu. Jeho nekonečné odhodlání k budování míru a lepšího světa 
+                          nám slouží jako inspirace a pohonná síla naší kolektivní snahy.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<!--Kontakty-->
+<div id="kontaktyS"></div>
+  <section id="kontaktyS">
+    <div class="container-fluid kont">
+      <div class="row text-center">
+        <div class="col-xs-12 col-sm-6 col-md-4">
+        <!--Send E-mail-->
+        <div class="container email">
+          <form id="contact" action="send.php" method="post">
+            <h1>Napiš nám</h1>
+            <hr class="hr">
+            <h6>Jméno</h6>
+            <fieldset>
+              <input name="name" type="text" tabindex="1">
+            </fieldset>
+            <h6>E-mail</h6>
+            <fieldset>
+              <input name="email" type="email" tabindex="2">
+            </fieldset>
+            <h6>Subjekt</h6>
+            <fieldset>
+              <input type="text" name="subject" tabindex="4">
+            </fieldset>
+            <h6>Zpráva</h6>
+            <fieldset>
+              <textarea name="message" tabindex="5" rows="3" cols="40"></textarea>
+            </fieldset>
+       
+            <fieldset>
+              <button type="submit" name="send" id="contact-submit">ODESLAT</button>
+            </fieldset>
+          </form>
+        </div>
+        </div>
+        <!--Kontakt-->
+        <div class="col-xs-12 col-sm-6 col-md-4 kontakty">
+          <h1>Kontakty</h1>
+          <hr class="hr">
+          <div class="container-fluid padding kontakty">
+            <div class="padding row text-center">
+              <div class="col-6">
+                <i class="fa-regular fa-map"></i>
+                <h4>Sídlo</h4>
+                <p>Kuks 28</p>
+              </div>
+              <div class="col-6">
+                <i class="fa-regular fa-address-book"></i>
+                <h4>Telefon</h4>
+                <p>747 457 328</p>
+              </div>
+              <div class="col-6">
+                <i class="fa-regular fa-building"></i>
+                <h4>Pobočky</h4>
+                <p>Habrkovice 40</p>
+              </div>
+              <div class="col-6">
+                <div class="container-fluid padding socials">
+                  <div class="padding row text-center">
+                    <div class="col-6">
+                      <a href="https://www.facebook.com/profile.php?id=61555726977675" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    </div>
+                    <div class="col-6">
+                      <a href="https://www.instagram.com/jsmemir/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <div class="col-6">
+                      <a href="https://twitter.com/JsmeMir" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                    <div class="col-6">
+                      <a href="https://www.youtube.com/channel/UC-AxSN4K1psABgtxLFDOlaQ" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-4">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2543.0647606388534!2d15.88488241233283!3d50.40263067146455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470e86355137d52f%3A0xe8178883c89f84ea!2sKuks%2028%2C%20544%2043%20Kuks!5e0!3m2!1scs!2scz!4v1705247163066!5m2!1scs!2scz" allowfullscreen="no" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--Footer-->
+  <footer class="page-footer">
+    <div class="text-center py-3">
+      <h6>&copy;COPYRIGHT; JSMEMIR 2024 VŠECHNA PRÁVA VYHRAZENA</h6>
+    </div>
+  </footer>
+
+</body>
+</html>

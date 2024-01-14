@@ -12,31 +12,31 @@ if (isset($_POST["send"])) {
   $mail = new PHPMailer(true);
  
     //Server settings
-    $mail->isSMTP();                              //Send using SMTP
-    $mail->Host       = 'smtp.gmail.com';       //Set the SMTP server to send through
-    $mail->SMTPAuth   = true;             //Enable SMTP authentication
-    $mail->Username   = 'jsme0mir@gmail.com';   //SMTP write your email
-    $mail->Password   = 'rmqsfoxzwwirdpcu';      //SMTP password
-    $mail->SMTPSecure = 'ssl';            //Enable implicit SSL encryption
+    $mail->isSMTP();                    
+    $mail->Host       = 'smtp.gmail.com';   
+    $mail->SMTPAuth   = true;  
+    $mail->Username   = 'jsme0mir@gmail.com';  
+    $mail->Password   = 'rmqsfoxzwwirdpcu';     
+    $mail->SMTPSecure = 'ssl';        
     $mail->Port       = 465;                                    
  
     //Recipients
-    $mail->setFrom( $_POST["email"], $_POST["name"]); // Sender Email and name
-    $mail->addAddress('jsme0mir@gmail.com');     //Add a recipient email  
-    $mail->addReplyTo($_POST["email"], $_POST["name"]); // reply to sender email
+    $mail->setFrom( $_POST["email"], $_POST["name"]);
+    $mail->addAddress('jsme0mir@gmail.com');  
+    $mail->addReplyTo($_POST["email"], $_POST["name"]);
  
     //Content
-    $mail->isHTML(true);               //Set email format to HTML
-    $mail->Subject = $_POST["subject"];   // email subject headings
-    $mail->Body    = $_POST["message"]; //email message
+    $mail->isHTML(true);   
+    $mail->Subject = $_POST["subject"];  
+    $mail->Body    = $_POST["message"]; 
       
     // Success sent message alert
     $mail->send();
     echo
     " 
     <script> 
-     alert('Message was sent successfully!');
-     document.location.href = 'index.php';
+     alert('E-mail odeslán.');
+     document.location.href = 'index.html';
     </script>
     ";
 }
